@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @page {
+            margin: 15px;
+        }
+        
+        body {
+            font-size: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #a0c8f0;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Monthly Entertainment Report</h2>
+    <p>Hello, {{ username }}!</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Venue Name</th>
+                <th>Movie Name</th>
+                <th>Start</th>
+                <th>End</th>
+                <th style="width: 40px;">Ticket Price</th>
+                <th style="width: 40px;">Movie Rating</th>
+                <th style="width: 40px;">Ticket Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for details in lister %}
+            <tr>
+                <td>{{ details[0] }}</td>
+                <td>{{ details[1] }}</td>
+                <td>{{ details[2] }}</td>
+                <td>{{ details[3] }}</td>
+                <td style="width: 40px;">{{ details[4] }}</td>
+                <td style="width: 40px;">{{ details[5] }}</td>
+                <td style="width: 40px;">{{ details[6] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
