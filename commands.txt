@@ -2,8 +2,7 @@
 
 # To run the vue application: npm run dev
 
-
-# Path to the project folder: cd /mnt/c/Users/nishkarsh/OneDrive/Desktop/MAD2
+# Path to the project folder: cd project_dir
 
 # To run redis server: redis-server
 
